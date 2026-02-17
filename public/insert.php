@@ -1,0 +1,32 @@
+<?php
+require_once "data/db.php"; //일부로 망가 뜨린거임 혹여나 다시 들어가면 복잡해지니까..
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/1.jpg','주술회전 1','저주와 마주한 이타도리 유지가 특급 주물 ‘스쿠나의 손가락’을 삼키며 주술사의 세계에 발을 들인다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/2.jpg','주술회전 2','후시구로와 함께 임무를 수행하며 유지가 주술고전 편입을 결정한다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/3.jpg','주술회전 3','고죠 사토루의 지도 아래 본격적인 주술사 수업이 시작된다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/4.jpg','주술회전 4','특급 저주와의 첫 실전에서 유지와 동료들은 압도적인 힘을 경험한다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/5.jpg','주술회전 5','위기 속에서 유지가 각성하며 새로운 결의를 다진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/6.jpg','주술회전 6','도쿄·교토 자매교 교류전이 예고되며 긴장감이 높아진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/7.jpg','주술회전 7','고죠 사토루의 압도적인 전투가 펼쳐진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/8.jpg','주술회전 8','유지의 성장과 동료들과의 유대가 깊어진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/9.jpg','주술회전 9','교류전이 시작되고 학교 간 대결이 펼쳐진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/10.jpg','주술회전 10','토도 아오이와 유지의 강렬한 만남이 이어진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/11.jpg','주술회전 11','단체전 속에서 각자의 전투 스타일이 드러난다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/12.jpg','주술회전 12','예상치 못한 저주의 난입으로 전장이 혼란에 빠진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/13.jpg','주술회전 13','마히토의 등장과 함께 새로운 위협이 모습을 드러낸다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/14.jpg','주술회전 14','유지와 나나미가 마히토와 대치한다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/15.jpg','주술회전 15','영혼을 다루는 저주의 능력이 밝혀진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/16.jpg','주술회전 16','유지의 분노가 폭발하며 처절한 전투가 이어진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/17.jpg','주술회전 17','교토 측 주술사들과의 협력이 시작된다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/18.jpg','주술회전 18','각 인물의 과거와 신념이 드러난다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/19.jpg','주술회전 19','격전 끝에 유지가 한계를 넘어선다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/20.jpg','주술회전 20','교류전이 마무리되며 새로운 국면을 맞는다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/21.jpg','주술회전 21','주태대천(呪胎戴天) 사건이 발생한다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/22.jpg','주술회전 22','시부야를 둘러싼 거대한 음모가 서서히 드러난다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/23.jpg','주술회전 23','주령과 주술사 간의 충돌이 본격화된다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/24.jpg','주술회전 24','시부야 사변의 막이 오르며 도시가 혼란에 빠진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/25.jpg','주술회전 25','고죠 사토루가 적들의 함정에 빠진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/26.jpg','주술회전 26','시부야 전역에서 동시다발적인 전투가 벌어진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/27.jpg','주술회전 27','각자의 사명을 건 사투가 이어진다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/28.jpg','주술회전 28','동료의 희생 속에서 유지가 다시 일어선다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/29.jpg','주술회전 29','저주 측의 계획이 점점 완성되어 간다.','5800','0','0')");
+DB::exec("INSERT INTO `products`(`img`, `title`, `des`, `price`, `dis`,`rental`) VALUES ('./asset/iamges/upload/30.jpg','주술회전 30','치열한 전투 끝에 새로운 전개를 예고하며 이야기가 이어진다.','5800','0','0')");
