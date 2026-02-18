@@ -254,7 +254,3 @@ select {
 .section > .container {
   padding: 30px;
 }
-#library {
-  width: 100%;
-  height: 100vh;
-}

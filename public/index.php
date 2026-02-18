@@ -10,8 +10,37 @@
 <style>
   #library>.container>article>.p>ul>li {
     object-fit: cover;
-    width: 165px;
-    height: 200px;
+    width: 175px;
+    height: 100%;
+    margin: 25px 0;
+  }
+
+  #library>.container>article>.p>ul>li>a>img {
+    border-radius: 10px;
+  }
+
+  #library>.container>article>.p>ul>li>ul>li>button {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #333;
+    margin: 10px 0;
+    border-radius: 15px;
+  }
+
+  #library>.container>article>.p>ul>li>ul>li>button:hover {
+    color: #f3f3f3;
+    background-color: #494040;
+    transition: ease-in-out .2s;
+  }
+
+  #library {
+    width: 100%;
+    height: 220vh;
+  }
+
+  #library>.container article {
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
 
@@ -60,11 +89,115 @@
         <article>
           <div class="p">
             <ul>
-              <?php $sql = DB::fetchAll("SELECT * FROM products");
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 0,5");
               foreach ($sql as $data) { ?>
                 <li>
-                  <a href="#"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/1.jpg"></a>
-                  <img src="./asset/iamges/upload/" alt="">
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
+                  <ul>
+                    <li><strong><?= $data['title'] ?></strong></li>
+                    <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>
+                    <li>
+                      대출 가능 권수:
+                      <span>
+                        <?= $data['rental'] == 0 ? "<span style='color:#c71717;'>대출불가</span>" : $data['rental']; ?>
+                      </span>
+                    </li>
+                    <li><button>책 대여</button></li>
+                  </ul>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="p">
+            <ul>
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 5,5");
+              foreach ($sql as $data) { ?>
+                <li>
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
+                  <ul>
+                    <li><strong><?= $data['title'] ?></strong></li>
+                    <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>
+                    <li>
+                      대출 가능 권수:
+                      <span>
+                        <?= $data['rental'] == 0 ? "<span style='color:#c71717;'>대출불가</span>" : $data['rental']; ?>
+                      </span>
+                    </li>
+                    <li><button>책 대여</button></li>
+                  </ul>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="p">
+            <ul>
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 10,5");
+              foreach ($sql as $data) { ?>
+                <li>
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
+                  <ul>
+                    <li><strong><?= $data['title'] ?></strong></li>
+                    <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>
+                    <li>
+                      대출 가능 권수:
+                      <span>
+                        <?= $data['rental'] == 0 ? "<span style='color:#c71717;'>대출불가</span>" : $data['rental']; ?>
+                      </span>
+                    </li>
+                    <li><button>책 대여</button></li>
+                  </ul>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="p">
+            <ul>
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 15,5");
+              foreach ($sql as $data) { ?>
+                <li>
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
+                  <ul>
+                    <li><strong><?= $data['title'] ?></strong></li>
+                    <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>
+                    <li>
+                      대출 가능 권수:
+                      <span>
+                        <?= $data['rental'] == 0 ? "<span style='color:#c71717;'>대출불가</span>" : $data['rental']; ?>
+                      </span>
+                    </li>
+                    <li><button>책 대여</button></li>
+                  </ul>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="p">
+            <ul>
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 20,5");
+              foreach ($sql as $data) { ?>
+                <li>
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
+                  <ul>
+                    <li><strong><?= $data['title'] ?></strong></li>
+                    <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>
+                    <li>
+                      대출 가능 권수:
+                      <span>
+                        <?= $data['rental'] == 0 ? "<span style='color:#c71717;'>대출불가</span>" : $data['rental']; ?>
+                      </span>
+                    </li>
+                    <li><button>책 대여</button></li>
+                  </ul>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+          <div class="p">
+            <ul>
+              <?php $sql = DB::fetchAll("SELECT * FROM products LIMIT 25,5");
+              foreach ($sql as $data) { ?>
+                <li>
+                  <a href="view.php?idx=<?= $data['idx'] ?>"><img src="<?= $data['img'] ?>" alt="./asset/iamges/upload/num.jpg"></a>
                   <ul>
                     <li><strong><?= $data['title'] ?></strong></li>
                     <li>가격: <span class="price"><?= number_format($data['price']) . "원" ?></span></li>

@@ -15,12 +15,12 @@ require_once "lib.php"
          <a href='admin.php'>관리자</a>
         </li>
         <li>
-         <a href='sub01.php'>서점둘러보기</a>
+         <a href='index.php#library'>서점둘러보기</a>
         </li>";
       } else {
         echo
         "<li>
-          <a href='sub01.php'>서점둘러보기</a>
+          <a href='index.php#library'>서점둘러보기</a>
         </li>";
       }
       ?>
