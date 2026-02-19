@@ -8,18 +8,40 @@
 </head>
 <?php require_once "header.php" ?>
 <style>
-  #library>.container>article>.p>ul>li {
+  #library {
+    width: 100%;
+    height: 220vh;
+  }
+
+  .p>ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .p>ul>li {
     object-fit: cover;
-    width: 175px;
+    width: 200px;
     height: 100%;
     margin: 25px 0;
   }
 
-  #library>.container>article>.p>ul>li>a>img {
+  .p>ul>li>a>img {
     border-radius: 10px;
   }
 
-  #library>.container>article>.p>ul>li>ul>li>button {
+  .p>ul>li>ul {
+    margin: 7px 0;
+  }
+
+  .p>ul>li>ul>li:nth-child(1) {
+    margin: 3px 0;
+    width: 100%;
+    font-size: 1.1em;
+    color: #494040;
+    text-align: center;
+  }
+
+  .p>ul>li>ul>li>button {
     width: 100%;
     height: 30px;
     border: 1px solid #333;
@@ -27,20 +49,10 @@
     border-radius: 15px;
   }
 
-  #library>.container>article>.p>ul>li>ul>li>button:hover {
+  .p>ul>li>ul>li>button:hover {
     color: #f3f3f3;
     background-color: #494040;
     transition: ease-in-out .2s;
-  }
-
-  #library {
-    width: 100%;
-    height: 220vh;
-  }
-
-  #library>.container article {
-    display: flex;
-    justify-content: space-evenly;
   }
 </style>
 
